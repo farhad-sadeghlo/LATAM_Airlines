@@ -1,0 +1,29 @@
+On helpful approach would be to separate national and international flights to different datasets, so, we can observe delayed times better 
+
+
+From airports.csv I can have the geolocation of the airports and then plot GeoChoropleth of airports, adding weather data maybe I can derive why delayed happened.
+https://davidmegginson.github.io/ourairports-data/airports.csv
+
+ML Analysis
+
+We can get rid of flight number, origin, and destination cities as they are too specific.
+
+
+Since being on-time matters so I would consider being > 15 as being abs() > 15
+
+
+For morning, afternoon and night, and also other classes from other columns use one-hot encoding 
+
+
+y is the last column either it is a delay or not
+
+
+Predicting minutes delayed and also predicting if the flight is delayed or not delayed.
+
+	for this We would feed all numerical columns as x and the delayed time in minutes as y
+
+
+Classifying flights if its delayed or not
+	for this x can remain as only those numerical columns and the delayed time as 1 delayed or 0 not delayed
+
+
